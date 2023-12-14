@@ -1,0 +1,182 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+  }
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+
+nav a:hover {
+    color: #ffd700; /* Change color on hover */
+  }
+
+.container{
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+.product{
+    display: flex;
+  }
+
+.info{
+    display: block;
+    margin-left: 24px;
+}
+
+.product img{
+    width: 690px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #C5B3B3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.info h2{
+    margin-top: 30pxc;
+    width: 646px;
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.line{
+    width: 700px;
+    height: 1px;
+    background: #000;
+}
+
+.info h3{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info p{
+    width: 190px;
+    height: 23px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.colour,.sizes{
+    display: inline-block;
+    margin-top: 114px;
+}
+
+.diff-colors{
+  display: inline-flex;
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
+
+.colorpallete{
+  width: 115px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background-color: #C5B3B3;
+  margin-left: 40px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent; /* Initially, set a transparent border */
+  transition: border 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.colorpallete h4{
+  margin-top: 40px;
+}
+
+
+
+#sizeshirt{
+  width: 93px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 50px;
+  margin-bottom: 27px;
+}
+
+.bl{
+  background-color: rgb(94, 94, 248);
+}
+.re{
+  background-color: rgb(252, 108, 108);
+
+}
+
+.ye{
+  background-color: rgb(242, 242, 68);
+}
+
+.ib{
+  display: block;
+}
+
+.ib button{
+  width: 163px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #f93434;
+  cursor: pointer;
+  border: none;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+#bn:hover{
+  background-color: black;
+  color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#atc:hover{
+  background-color: black;
+  color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.colorpallete.active {
+  border-color: black; /* Change the border color when the palette is clicked */
+}
