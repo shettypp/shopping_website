@@ -224,11 +224,47 @@ button:hover{
 
 }
 
-@media print{
-    body *{
-        visibility:hidden;
+/* ... (your existing CSS) ... */
+
+/* ... (existing styles) ... */
+
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
     }
-    print-area *{
-        visibility:visible;
-    } 
+
+    .header-image {
+        text-align: center;
+        margin-top: 10px; /* Adjust as needed */
+    }
+
+    .print-area .header img {
+        width: 50%; /* Adjust as needed */
+        height: auto;
+        max-width: 100%; /* Ensure the image doesn't exceed its container width */
+        margin-bottom: 10px; /* Adjust as needed */
+    }
+
+    .header-text {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .left-area {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .bars {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .right-area {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* ... (other responsive adjustments) ... */
 }
